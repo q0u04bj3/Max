@@ -4,4 +4,4 @@ with open("sample1.dat") as file:
         line = line.strip()
         lines.append(line)
 
-print sorted(lines,reverse=True)[:3]
+print '\n'.join(sorted(lines,reverse=True)[:3])
