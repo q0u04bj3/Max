@@ -9,8 +9,7 @@ def my_min(lst):
 
 with open("sample1.dat") as file:
     for line in file:
-        line = line.strip()
-        lines.append(line)
+        lines.append(line.strip())
         if len(lines) > 3:
             lines.remove(my_min(lines))
 
