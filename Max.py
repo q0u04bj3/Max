@@ -7,10 +7,11 @@ def my_min(lst):
             min_val = item
     return min_val
 
-with open("sample1.dat") as file:
-    for line in file:
-        lines.append(line.strip())
-        if len(lines) > 3:
-            lines.remove(my_min(lines))
+def Max(file):
+    with open(file) as file:
+        for line in file:
+            lines.append(line.strip('\n'))
+            if len(lines) > 3:
+                lines.remove(my_min(lines))
 
-print '\n'.join(lines)
+    return '\n'.join(lines)
