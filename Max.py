@@ -6,7 +6,7 @@ def my_min(lst):
     return min_val
 
 def Max(file):
-    lines = [0]
+    lines = []
     with open(file) as file:
         for line in file:
             lines.append(line.strip('\n'))
