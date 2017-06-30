@@ -22,7 +22,7 @@ class PerfectNumTest(unittest.TestCase):
         self.assertEqual(value, expected_value)
 
     def test_Max4(self):
-        expected_value = ['700','800','900']
+        expected_value = ['']
         test_file="sample4.dat"
         value = Max(test_file)
         self.assertEqual(value, expected_value)
