@@ -6,7 +6,7 @@ class PerfectNumTest(unittest.TestCase):
     def test_readFile(self):
         expected_value = ['2134', '3412', '6421', '8723', '9239', '1234', '2345']
         test_file="sample1.dat"
-        value = readFile(test_file)
+        value = read_file(test_file)
         self.assertEqual(value, expected_value)
 
     def test_my_3max_num(self):
