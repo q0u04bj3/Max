@@ -5,12 +5,18 @@ def my_min(lst):
             min_val = item
     return min_val
 
-def Max(file):
+def readFile(file):
     lines = []
     with open(file) as file:
         for line in file:
-            lines.append(line.strip('\n'))
-            if len(lines) > 3:
-                lines.remove(my_min(lines))
+            lines.append(line.strip())
 
-    return lines
+        return lines
+
+def my_3max(lines):
+    max_lst=[]
+    for element in lines:
+        max_lst.append(element)
+        if len(max_lst) > 3:
+            max_lst.remove(my_min(max_lst))
+    return  max_lst
