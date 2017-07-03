@@ -5,7 +5,7 @@ def my_min(lst):
             min_val = item
     return min_val
 
-def readFile(file):
+def read_file(file):
     lines = []
     with open(file) as file:
         for line in file:
